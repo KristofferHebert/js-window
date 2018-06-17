@@ -1,4 +1,6 @@
 (function(){
+    // Cache current popup window
+    var popup = false;
 
     // Create window popup based on link
     function triggerPopup(link){
@@ -22,8 +24,6 @@
     }
 
     function bootstrap() {
-        // Cache current popup window
-        var popup = false;
 
         // Get all Menu anchor tags
         var menuLinks = document.querySelectorAll('li a');
